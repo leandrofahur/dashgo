@@ -13,8 +13,8 @@ const Chart = dynamic(() => import('react-apexcharts'), {
   ssr: false,
 });
 
-import Header from '../components/layouts/Header';
-import Sidebar from '../components/layouts/Sidebar';
+import { Header } from '../components/layouts/Header';
+import { Sidebar } from '../components/layouts/Sidebar';
 import { opacity } from 'styled-system';
 
 const options: ApexOptions = {

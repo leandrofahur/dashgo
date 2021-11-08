@@ -15,11 +15,11 @@ import {
 } from '@chakra-ui/react';
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 
-import Header from '../../components/layouts/Header';
-import Sidebar from '../../components/layouts/Sidebar';
+import { Header } from '../../components/layouts/Header';
+import { Sidebar } from '../../components/layouts/Sidebar';
 import Pagination from '../../components/Pagination';
 
-function UserLisrt() {
+export default function UserList() {
   return (
     <Box>
       <Header />
@@ -34,7 +34,8 @@ function UserLisrt() {
               as='a'
               size='sm'
               fontSize='sm'
-              colorScheme='pink'
+              color='white'
+              bg='pink.500'
               leftIcon={<Icon as={RiAddLine} fontSize='20' />}
             >
               Criar novo
@@ -71,7 +72,8 @@ function UserLisrt() {
                     as='a'
                     size='sm'
                     fontSize='sm'
-                    colorScheme='purple'
+                    color='white'
+                    bg='purple.500'
                     leftIcon={<Icon as={RiPencilLine} fontSize={16} />}
                   >
                     Editar
@@ -96,7 +98,8 @@ function UserLisrt() {
                     as='a'
                     size='sm'
                     fontSize='sm'
-                    colorScheme='purple'
+                    color='white'
+                    bg='purple.500'
                     leftIcon={<Icon as={RiPencilLine} fontSize={16} />}
                   >
                     Editar
@@ -121,7 +124,8 @@ function UserLisrt() {
                     as='a'
                     size='sm'
                     fontSize='sm'
-                    colorScheme='purple'
+                    color='white'
+                    bg='purple.500'
                     leftIcon={<Icon as={RiPencilLine} fontSize={16} />}
                   >
                     Editar
@@ -136,5 +140,3 @@ function UserLisrt() {
     </Box>
   );
 }
-
-export default UserLisrt;
